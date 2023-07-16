@@ -1,0 +1,10 @@
+Region S3: Global 
+Lambda: Tokyo
+StepFunctions: Tokyo
+
+bucket = 'bucket1-for-aws'
+
+#input file:
+key = 'random_numbers.csv'
+
+--------------------------------------------------------------------------------------
