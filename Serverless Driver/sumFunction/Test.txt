@@ -1,0 +1,23 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "task-parallel",
+          "arn": "arn:aws:s3:::task-parallel"
+        },
+        "object": {
+          "inputPath": "input",
+          "inFileName": "input.txt",
+          "outputPath": "output",
+          "startPos": 1,
+          "readSize": 10,
+          "searchChar": "\n",
+          "funcName": "sumFunction",
+          "outFileName": "sumValue.txt",
+          "result": 0
+        }
+      }
+    }
+  ]
+}
