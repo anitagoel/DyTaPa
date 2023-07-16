@@ -1,0 +1,119 @@
+# role to be used - ImporterS3Role
+#--------------For the controller function -------------------
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "task-parallel",
+          "arn": "arn:aws:s3:::task-parallel"
+        },
+        "object": {
+          "inputPath": "input",
+          "inFileName": "input.txt",
+          "outputPath": "output",
+          "startPos": 1,
+          "readSize": 10,
+          "searchChar": "\n"
+        },
+         "functions":[
+           {
+               "func": {
+                    "funcName": "maxFunction",
+                    "outFileName": "maxValue.txt"
+               }
+           },
+           {
+               "func": {
+                 "funcName": "m  inFunction",
+                 "outFileName": "minValue.txt"
+               }
+           },
+           {
+               "func": {
+                 "funcName": "sumFunction",
+                 "outFileName": "sumValue.txt"
+               }
+           }
+        ]
+      }
+    }
+  ]
+}
+
+
+#--------------For the max processor function -------------------
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "task-parallel",
+          "arn": "arn:aws:s3:::task-parallel"
+        },
+        "object": {
+          "inputPath": "input",
+          "inFileName": "input.txt",
+          "outputPath": "output",
+          "startPos": 1,
+          "readSize": 10,
+          "searchChar": "\n",
+          "funcName": "maxFunction",
+          "outFileName": "maxValue.txt"
+          "result": 0
+        }
+      }
+    }
+  ]
+}
+
+#--------------For the min processor function -------------------
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "task-parallel",
+          "arn": "arn:aws:s3:::task-parallel"
+        },
+        "object": {
+          "inputPath": "input",
+          "inFileName": "input.txt",
+          "outputPath": "output",
+          "startPos": 1,
+          "readSize": 10,
+          "searchChar": "\n",
+          "funcName": "minFunction",
+          "outFileName": "minValue.txt",
+          "result": 0
+        }
+      }
+    }
+  ]
+}
+
+#--------------For the sum processor function -------------------
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "task-parallel",
+          "arn": "arn:aws:s3:::task-parallel"
+        },
+        "object": {
+          "inputPath": "input",
+          "inFileName": "input.txt",
+          "outputPath": "output",
+          "startPos": 1,
+          "readSize": 10,
+          "searchChar": "\n",
+          "funcName": "sumFunction",
+          "outFileName": "sumValue.txt",
+          "result": 0
+        }
+      }
+    }
+  ]
+}
+-------------------------------------------------------------------------
