@@ -1,0 +1,47 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "task-parallel",
+          "arn": "arn:aws:s3:::task-parallel"
+        },
+        "object": {
+          "inputPath": "input",
+          "inFileName": "input.txt",
+          "startPos": 11,
+          "readSize": 10,
+          "functionPath": "funcs",
+          "funcFileName": "maxFunc.txt",
+          "taskParallelDriverFunction": "taskParallelDriverFunction",
+          "searchChar": "\n",
+          "outputPath": "output",
+          "outFileName": "maxValue.txt",
+          "result": 24,
+          "resultHandling": "maxValue"
+        }
+      }
+    }
+  ]
+}
+
+1 Check File End Reaching. Start Pos at: 1  readSize 10 File Size: 121
+2 Executing IF loop for read. Start Pos at: 1  readSize 10 File Size: 121
+3 File End Reaching. executign ELSE loop. Start Pos at: 1 File Size: 121  readSize 120
+Return Bytes:  12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
